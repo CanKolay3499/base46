@@ -48,8 +48,8 @@ darker_black = 6% darker than black
 black2 = 6% lighter than black
 
 onebg = 10% lighter than black
-oneb2 = 19% lighter than black
-oneb3 = 27% lighter than black
+onebg2 = 19% lighter than black
+onebg3 = 27% lighter than black
 
 grey = 40% lighter than black (the % here depends so choose the perfect grey!)
 grey_fg = 10% lighter than grey
