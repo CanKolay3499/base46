@@ -159,8 +159,6 @@ return {
     fg = theme.base09,
   },
 
-  -- variable.global
-
   ['@definition'] = {
     sp = theme.base04,
     underline = true,

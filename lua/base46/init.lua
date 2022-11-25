@@ -16,7 +16,6 @@ _G.base46_config = {
 }
 
 --- @param type "base_30"|"base_16"|"polish_hl"|"type"
---- @return Colors_30|Colors_16|table|string
 M.get_theme_tb = function(type)
   local theme = base46_config.theme
 

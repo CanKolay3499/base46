@@ -53,7 +53,9 @@ M.base_16 = {
 }
 
 M.polish_hl = {
-  ['@variable'] = { fg = M.base_30.red },
+  ['@variable'] = { fg = M.base_30.white },
+  ['@definition'] = { fg = M.base_30.teal },
+  ['@constant.macro'] = { fg = M.base_30.teal },
   ['@function.builtin'] = { fg = M.base_30.cyan },
   ['@parameter'] = { fg = M.base_30.white },
 }

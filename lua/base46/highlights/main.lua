@@ -4,9 +4,9 @@ local theme = require('base46').get_theme_tb('base_16')
 return {
   MatchWord = { bg = colors.grey, fg = colors.white },
   Pmenu = { bg = colors.darker_black },
-  PmenuSbar = { bg = colors.darker_black },
+  PmenuSbar = { bg = colors.black2 },
   PmenuSel = { bg = colors.pmenu_bg, fg = colors.black },
-  PmenuThumb = { bg = colors.grey },
+  PmenuThumb = { bg = colors.line },
   MatchParen = { link = 'MatchWord' },
   Comment = { fg = colors.grey_fg },
   CursorLineNr = { fg = colors.white },
