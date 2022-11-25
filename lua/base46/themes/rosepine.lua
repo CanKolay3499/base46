@@ -53,19 +53,22 @@ M.base_16 = {
 }
 
 M.polish_hl = {
-  ['@keyword.function'] = { fg = M.base_16.base0D },
-  ['@variable'] = { fg = M.base_16.base0B },
+  ['@keyword.function'] = { fg = M.base_16.base0E },
+  ['@keyword'] = { fg = M.base_16.base0E },
+  ['@keyword.operator'] = { fg = M.base_16.base0C },
+  ['@variable'] = { fg = M.base_16.base0D },
   ['@constant.macro'] = { fg = M.base_16.base0D },
   ['@function'] = {
     fg = M.base_16.base0C,
   },
   ['@function.builtin'] = {
-    fg = M.base_16.base0C,
+    fg = M.base_16.base0D,
   },
   Identifier = { fg = M.base_30.orange },
   String = { fg = M.base_30.yellow },
   Boolean = { fg = M.base_30.red },
   Number = { fg = M.base_30.yellow },
+  Repeat = { fg = M.base_16.base0E },
   Statement = { fg = M.base_30.base0C },
   Include = { fg = M.base_16.base0D },
   Type = { fg = M.base_16.base0D },
