@@ -148,7 +148,7 @@ return {
   },
 
   ['@type.builtin'] = {
-    fg = theme.base0A,
+    link = 'Type',
   },
 
   ['@variable'] = {

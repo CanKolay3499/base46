@@ -111,6 +111,6 @@ return {
   },
 
   Typedef = {
-    fg = theme.base0A,
+    link = 'Type',
   },
 }
