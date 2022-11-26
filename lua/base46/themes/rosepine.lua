@@ -53,24 +53,14 @@ M.base_16 = {
 }
 
 M.polish_hl = {
-  ['@keyword.function'] = { fg = M.base_16.base0E },
-  ['@keyword'] = { fg = M.base_16.base0E },
-  ['@keyword.operator'] = { fg = M.base_16.base0C },
-  ['@variable'] = { fg = M.base_16.base0D },
-  ['@constant.macro'] = { fg = M.base_16.base0D },
-  ['@function'] = {
-    fg = M.base_16.base0C,
-  },
-  ['@function.builtin'] = {
-    fg = M.base_16.base0D,
-  },
-  Identifier = { fg = M.base_30.orange },
+  ['@keyword.function'] = { fg = M.base_16.base0C },
+  ['@function'] = { fg = M.base_16.base0C },
+  ['@function.builtin'] = { fg = M.base_16.base0C },
+  ['@keyword.return'] = { fg = M.base_16.base0C },
+  ['@variable'] = { fg = M.base_16.base08 },
   String = { fg = M.base_30.yellow },
   Boolean = { fg = M.base_30.red },
   Number = { fg = M.base_30.yellow },
-  Repeat = { fg = M.base_16.base0E },
-  Statement = { fg = M.base_30.base0C },
-  Include = { fg = M.base_16.base0D },
   Type = { fg = M.base_16.base0D },
   CmpItemAbbrMatch = { fg = M.base_16.base0C, bold = true },
   C_InsertMode = { bg = M.base_30.orange, fg = M.base_30.black, bold = true },

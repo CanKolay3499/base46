@@ -1,10 +1,6 @@
 local theme = require('base46').get_theme_tb('base_16')
 
 return {
-  ['@annotation'] = {
-    fg = theme.base0F,
-  },
-
   ['@attribute'] = {
     fg = theme.base0A,
   },
@@ -12,6 +8,10 @@ return {
   ['@character'] = {
     fg = theme.base08,
   },
+
+  ['@annotation'] = { link = 'PreProc' },
+  ['@boolean'] = { link = 'Boolean' },
+  ['@comment'] = { link = 'Comment' },
 
   ['@constructor'] = {
     fg = theme.base0C,
