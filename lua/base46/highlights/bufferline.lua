@@ -1,34 +1,25 @@
 local colors = require('base46').get_theme_tb('base_30')
+local theme = require('base46').get_theme_tb('base_16')
+
+local primary = colors.black
 
 return {
-
   BufferLineBackground = {
     fg = colors.light_grey,
     bg = colors.darker_black,
   },
-
-  BufferlineIndicatorVisible = {
-    fg = colors.darker_black,
+  BufferLineFill = {
+    fg = colors.light_grey,
     bg = colors.darker_black,
-  },
-
-  BufferLineBufferSelected = {
-    fg = colors.white,
-    bg = colors.black,
   },
 
   BufferLineBufferVisible = {
     fg = colors.light_grey,
     bg = colors.darker_black,
   },
-
-  BufferLineError = {
-    fg = colors.light_grey,
-    bg = colors.darker_black,
-  },
-  BufferLineErrorDiagnostic = {
-    fg = colors.light_grey,
-    bg = colors.darker_black,
+  BufferLineBufferSelected = {
+    fg = colors.white,
+    bg = primary,
   },
 
   BufferLineCloseButton = {
@@ -41,32 +32,31 @@ return {
   },
   BufferLineCloseButtonSelected = {
     fg = colors.red,
-    bg = colors.black,
+    bg = primary,
   },
-  BufferLineFill = {
-    fg = colors.grey_fg,
+
+  BufferlineIndicatorVisible = {
+    fg = colors.darker_black,
     bg = colors.darker_black,
   },
   BufferlineIndicatorSelected = {
-    fg = colors.black,
-    bg = colors.black,
+    fg = primary,
+    bg = primary,
   },
 
-  -- modified
   BufferLineModified = {
-    fg = colors.red,
+    fg = colors.green,
     bg = colors.darker_black,
   },
   BufferLineModifiedVisible = {
-    fg = colors.red,
+    fg = colors.green,
     bg = colors.darker_black,
   },
   BufferLineModifiedSelected = {
     fg = colors.green,
-    bg = colors.black,
+    bg = primary,
   },
 
-  -- separators
   BufferLineSeparator = {
     fg = colors.darker_black,
     bg = colors.darker_black,
@@ -76,42 +66,36 @@ return {
     bg = colors.darker_black,
   },
   BufferLineSeparatorSelected = {
-    fg = colors.darker_black,
-    bg = colors.darker_black,
+    fg = primary,
+    bg = primary,
   },
 
-  -- tabs
   BufferLineTab = {
     fg = colors.light_grey,
-    bg = colors.one_bg3,
+    bg = colors.darker_black,
   },
   BufferLineTabSelected = {
-    fg = colors.darker_black,
-    bg = colors.nord_blue,
-  },
-  BufferLineTabClose = {
-    fg = colors.red,
-    bg = colors.black,
+    fg = colors.light_grey,
+    bg = primary,
   },
 
   BufferLineDevIconDefaultSelected = {
     bg = 'none',
   },
-
   BufferLineDevIconDefaultInactive = {
     bg = 'none',
   },
 
   BufferLineDuplicate = {
-    fg = 'NONE',
+    fg = colors.light_grey,
+    bg = colors.darker_black,
+  },
+  BufferLineDuplicateVisible = {
+    fg = colors.light_grey,
     bg = colors.darker_black,
   },
   BufferLineDuplicateSelected = {
-    fg = colors.red,
-    bg = colors.black,
-  },
-  BufferLineDuplicateVisible = {
-    fg = colors.blue,
-    bg = colors.darker_black,
+    fg = colors.light_grey,
+    bg = primary,
   },
 }

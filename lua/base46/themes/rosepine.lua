@@ -1,3 +1,5 @@
+local utils = require('base46.utils')
+
 local M = {}
 
 M.base_30 = {
@@ -53,17 +55,51 @@ M.base_16 = {
 }
 
 M.polish_hl = {
-  ['@variable'] = { fg = M.base_16.base0F },
-  ['@keyword'] = { fg = M.base_16.base0E },
+  ['@variable'] = { fg = M.base_16.base05 },
+  ['@variable.builtin'] = { fg = M.base_16.base09, italic = true },
+  ['@constant.builtin'] = { fg = M.base_16.base09, italic = true },
+  ['@keyword'] = { fg = M.base_16.base0C },
   ['@keyword.function'] = { fg = M.base_16.base0C },
   ['@keyword.return'] = { fg = M.base_16.base0C },
-  ['@function'] = { fg = M.base_16.base0C },
-  ['@function.builtin'] = { fg = M.base_16.base08 },
-  String = { fg = M.base_30.yellow },
-  Boolean = { fg = M.base_30.red },
-  Number = { fg = M.base_30.yellow },
-  Type = { fg = M.base_16.base0C },
-  Include = { fg = M.base_16.base0D },
+  ['@keyword.operator'] = { fg = M.base_16.base0C },
+  ['@function'] = { fg = M.base_16.base0B },
+  ['@method'] = { fg = M.base_16.base0B },
+  ['@function.macro'] = { fg = M.base_16.base0B },
+  ['@function.builtin'] = { fg = M.base_16.base09 },
+  ['@attribute'] = { fg = M.base_16.base0B },
+  ['@constructor'] = {
+    fg = M.base_16.base0D,
+  },
+  ['@parameter'] = {
+    fg = M.base_16.base0E,
+  },
+
+  ['@reference'] = {
+    fg = M.base_16.base0E,
+  },
+
+  ['@punctuation.bracket'] = {
+    fg = M.base_16.base05,
+  },
+
+  ['@punctuation.delimiter'] = {
+    fg = M.base_16.base0C,
+  },
+
+  ['@punctuation.special'] = {
+    fg = M.base_16.base0C,
+  },
+  ['@type'] = { fg = M.base_16.base0D },
+  ['@type.qualifier'] = { fg = M.base_16.base0C },
+  ['@tag'] = { fg = M.base_16.base0D },
+  ['@string'] = { fg = M.base_30.yellow },
+  ['@boolean'] = { fg = M.base_16.base09 },
+  Special = { fg = M.base_16.base04 },
+  SpecialChar = { fg = M.base_16.base04 },
+  Number = { fg = M.base_16.base0B },
+  PreProc = { fg = M.base_16.base0D },
+  Define = { fg = M.base_16.base0C },
+  Operator = { fg = M.base_16.base0C },
   CmpItemAbbrMatch = { fg = M.base_16.base0C, bold = true },
   C_InsertMode = { bg = M.base_30.orange, fg = M.base_30.black, bold = true },
   C_InsertModeSeparator = { fg = M.base_30.orange, bg = M.base_30.darker_black },

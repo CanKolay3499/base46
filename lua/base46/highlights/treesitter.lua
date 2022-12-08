@@ -10,8 +10,13 @@ return {
   },
 
   ['@annotation'] = { link = 'PreProc' },
-  ['@boolean'] = { link = 'Boolean' },
-  ['@comment'] = { link = 'Comment' },
+  ['@boolean'] = { fg = theme.base09 },
+  ['@number'] = {
+    fg = theme.base09,
+  },
+  ['@comment'] = { fg = theme.base02 },
+
+  ['@type.qualifier'] = { fg = theme.base0B },
 
   ['@constructor'] = {
     fg = theme.base0C,
@@ -26,15 +31,15 @@ return {
   },
 
   ['@error'] = {
-    fg = theme.base08,
+    fg = theme.base09,
   },
 
   ['@exception'] = {
-    fg = theme.base08,
+    fg = theme.base09,
   },
 
   ['@float'] = {
-    fg = theme.base09,
+    link = '@number',
   },
 
   ['@keyword'] = {
@@ -42,11 +47,11 @@ return {
   },
 
   ['@keyword.function'] = {
-    fg = theme.base0E,
+    link = '@keyword',
   },
 
   ['@keyword.return'] = {
-    fg = theme.base0E,
+    link = '@keyword',
   },
 
   ['@function'] = {
@@ -74,7 +79,7 @@ return {
   },
 
   ['@none'] = {
-    fg = theme.base05,
+    link = '@boolean',
   },
 
   ['@parameter'] = {
@@ -97,6 +102,9 @@ return {
     fg = theme.base08,
   },
 
+  ['@string'] = {
+    fg = theme.base0B,
+  },
   ['@string.regex'] = {
     fg = theme.base0C,
   },
@@ -110,7 +118,7 @@ return {
   },
 
   ['@tag'] = {
-    link = 'Tag',
+    fg = theme.base0A,
   },
 
   ['@tag.attribute'] = {
@@ -147,8 +155,13 @@ return {
     underline = true,
   },
 
+  ['@type'] = {
+    fg = theme.base0A,
+    sp = 'none',
+  },
+
   ['@type.builtin'] = {
-    link = 'Type',
+    link = '@type',
   },
 
   ['@variable'] = {
@@ -186,10 +199,10 @@ return {
   },
 
   ['@include'] = {
-    link = 'Include',
+    link = '@keyword',
   },
 
   ['@conditional'] = {
-    link = 'Conditional',
+    link = '@keyword',
   },
 }

@@ -2,7 +2,7 @@ local theme = require('base46').get_theme_tb('base_16')
 
 return {
   Boolean = {
-    fg = theme.base09,
+    link = '@boolean',
   },
 
   Character = {
@@ -10,7 +10,7 @@ return {
   },
 
   Conditional = {
-    fg = theme.base0E,
+    link = '@conditional',
   },
 
   Constant = {
@@ -27,15 +27,15 @@ return {
   },
 
   Float = {
-    fg = theme.base09,
+    link = '@float',
   },
 
   Variable = {
-    fg = theme.base05,
+    link = '@variable',
   },
 
   Function = {
-    fg = theme.base0D,
+    link = '@function',
   },
 
   Identifier = {
@@ -44,11 +44,11 @@ return {
   },
 
   Include = {
-    fg = theme.base0D,
+    link = '@include',
   },
 
   Keyword = {
-    fg = theme.base0E,
+    link = '@keyword',
   },
 
   Label = {
@@ -56,7 +56,7 @@ return {
   },
 
   Number = {
-    fg = theme.base09,
+    link = '@number',
   },
 
   Operator = {
@@ -65,11 +65,11 @@ return {
   },
 
   PreProc = {
-    fg = theme.base0A,
+    fg = theme.base09,
   },
 
   Repeat = {
-    fg = theme.base0A,
+    link = '@keyword',
   },
 
   Special = {
@@ -89,7 +89,7 @@ return {
   },
 
   String = {
-    fg = theme.base0B,
+    link = '@string',
   },
 
   Structure = {
@@ -97,7 +97,7 @@ return {
   },
 
   Tag = {
-    fg = theme.base0A,
+    link = '@tag',
   },
 
   Todo = {
@@ -106,11 +106,10 @@ return {
   },
 
   Type = {
-    fg = theme.base0A,
-    sp = 'none',
+    link = '@type',
   },
 
   Typedef = {
-    link = 'Type',
+    link = '@type',
   },
 }
