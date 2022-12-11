@@ -56,9 +56,8 @@ M.base_16 = {
 
 M.polish_hl = {
   Statement = { fg = M.base_30.purple },
-  Type = { fg = M.base_30.white2 },
-  Include = { fg = M.base_30.tan },
-  Keyword = { fg = M.base_16.base0D },
+  ['@type'] = { fg = M.base_30.white2 },
+  ['@include'] = { fg = M.base_30.tan },
   Operator = { fg = M.base_30.red },
   ['@keyword'] = { fg = M.base_16.base0D },
 }

@@ -1,5 +1,3 @@
-local utils = require('base46.utils')
-
 local M = {}
 
 M.base_30 = {
@@ -58,12 +56,16 @@ M.polish_hl = {
   ['@variable'] = { fg = M.base_16.base05 },
   ['@variable.builtin'] = { fg = M.base_16.base09, italic = true },
   ['@constant.builtin'] = { fg = M.base_16.base09, italic = true },
+  ['@constant'] = { fg = M.base_16.base09, italic = true },
+  ['@constant.macro'] = { fg = M.base_16.base09, italic = true },
   ['@keyword'] = { fg = M.base_16.base0C },
   ['@keyword.function'] = { fg = M.base_16.base0C },
   ['@keyword.return'] = { fg = M.base_16.base0C },
   ['@keyword.operator'] = { fg = M.base_16.base0C },
   ['@function'] = { fg = M.base_16.base0B },
+  ['@function.call'] = { fg = M.base_16.base0B },
   ['@method'] = { fg = M.base_16.base0B },
+  ['@method.call'] = { fg = M.base_16.base0B },
   ['@function.macro'] = { fg = M.base_16.base0B },
   ['@function.builtin'] = { fg = M.base_16.base09 },
   ['@attribute'] = { fg = M.base_16.base0B },
@@ -94,9 +96,9 @@ M.polish_hl = {
   ['@tag'] = { fg = M.base_16.base0D },
   ['@string'] = { fg = M.base_30.yellow },
   ['@boolean'] = { fg = M.base_16.base09 },
+  ['@number'] = { fg = M.base_16.base0B },
   Special = { fg = M.base_16.base04 },
   SpecialChar = { fg = M.base_16.base04 },
-  Number = { fg = M.base_16.base0B },
   PreProc = { fg = M.base_16.base0D },
   Define = { fg = M.base_16.base0C },
   Operator = { fg = M.base_16.base0C },

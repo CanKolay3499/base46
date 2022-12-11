@@ -62,7 +62,7 @@ M.polish_hl = {
     fg = M.base_16.base05,
   },
 
-  Include = {
+  ['@include'] = {
     fg = M.base_16.base0C,
     bold = true,
   },

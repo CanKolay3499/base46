@@ -53,8 +53,8 @@ M.base_16 = {
 }
 
 M.polish_hl = {
-  Include = { fg = M.base_16.base0E, bold = true },
-  Repeat = { fg = M.base_16.base0E },
+  ['@include'] = { fg = M.base_16.base0E, bold = true },
+  ['@repeat'] = { fg = M.base_16.base0E },
   ['@field.key'] = { fg = M.base_16.base0E },
   ['@variable'] = { fg = M.base_16.base08 },
   ['@property'] = { fg = M.base_16.base0E },

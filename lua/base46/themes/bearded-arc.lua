@@ -53,7 +53,7 @@ M.base_16 = {
 }
 
 M.polish_hl = {
-  Conditional = {
+  ['@conditional'] = {
     fg = M.base_30.yellow,
   },
 
@@ -69,7 +69,7 @@ M.polish_hl = {
     fg = M.base_30.yellow,
   },
 
-  Include = {
+  ['@include'] = {
     fg = M.base_30.yellow,
   },
 
