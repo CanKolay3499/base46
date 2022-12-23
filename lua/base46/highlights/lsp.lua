@@ -8,6 +8,5 @@ return {
   DiagnosticHint = { fg = colors.purple },
   DiagnosticError = { fg = colors.red },
   DiagnosticWarn = { fg = colors.yellow },
-  DiagnosticInformation = { fg = colors.green },
-  LspSignatureActiveParameter = { fg = colors.black, bg = colors.green },
+  DiagnosticInfo = { fg = colors.green },
 }
