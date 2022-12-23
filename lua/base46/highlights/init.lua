@@ -14,6 +14,7 @@ end
 
 if base46_config.load_all_highlights then
   for _, file in pairs({
+    'aerial',
     'alpha',
     'bufferline',
     'blankline',
