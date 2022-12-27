@@ -54,8 +54,6 @@ M.base_16 = {
 
 M.polish_hl = {
   ['@variable'] = { fg = M.base_16.base05 },
-  ['@variable.builtin'] = { fg = M.base_16.base09, italic = true },
-  ['@constant.builtin'] = { fg = M.base_16.base09, italic = true },
   ['@constant'] = { fg = M.base_16.base09, italic = true },
   ['@constant.macro'] = { fg = M.base_16.base09, italic = true },
   ['@keyword'] = { fg = M.base_16.base0C },
@@ -67,7 +65,6 @@ M.polish_hl = {
   ['@method'] = { fg = M.base_16.base0B },
   ['@method.call'] = { fg = M.base_16.base0B },
   ['@function.macro'] = { fg = M.base_16.base0B },
-  ['@function.builtin'] = { fg = M.base_16.base09 },
   ['@attribute'] = { fg = M.base_16.base0B },
   ['@constructor'] = {
     fg = M.base_16.base0D,

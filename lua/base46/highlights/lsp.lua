@@ -9,4 +9,11 @@ return {
   DiagnosticError = { fg = colors.red },
   DiagnosticWarn = { fg = colors.yellow },
   DiagnosticInfo = { fg = colors.green },
+
+  DiagnosticInformation = { link = 'DiagnosticInfo' },
+
+  DiagnosticSignHint = { link = 'DiagnosticHint' },
+  DiagnosticSignError = { link = 'DiagnosticError' },
+  DiagnosticSignWarn = { link = 'DiagnosticWarn' },
+  DiagnosticSignInfo = { link = 'DiagnosticInfo' },
 }
