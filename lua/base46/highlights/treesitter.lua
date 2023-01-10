@@ -14,7 +14,7 @@ return {
   ['@constant.builtin'] = { link = '@constant' },
   ['@constant.macro'] = { fg = theme.base08 },
   ['@error'] = { fg = theme.base09 },
-  ['@exception'] = { fg = theme.base09 },
+  ['@exception'] = { link = '@error' },
   ['@function'] = { fg = theme.base0D },
   ['@function.builtin'] = { link = '@function' },
   ['@function.call'] = { link = '@function' },

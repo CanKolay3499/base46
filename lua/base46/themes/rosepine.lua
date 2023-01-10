@@ -1,3 +1,5 @@
+local utils = require('base46.utils')
+
 local M = {}
 
 M.base_30 = {
@@ -52,10 +54,11 @@ M.base_16 = {
   base0F = '#e5e5e5',
 }
 
+local baseCD = utils.blend(M.base_16.base0D, M.base_16.base0C, 0.75)
+local baseAB = utils.blend(M.base_16.base08, M.base_16.base0A, 0.90)
+
 M.polish_hl = {
-  ['@variable'] = { fg = M.base_16.base05 },
-  ['@constant'] = { fg = M.base_16.base09, italic = true },
-  ['@constant.macro'] = { fg = M.base_16.base09, italic = true },
+  ['@variable'] = { fg = baseAB },
   ['@keyword'] = { fg = M.base_16.base0C },
   ['@keyword.function'] = { fg = M.base_16.base0C },
   ['@keyword.return'] = { fg = M.base_16.base0C },
@@ -67,24 +70,26 @@ M.polish_hl = {
   ['@function.macro'] = { fg = M.base_16.base0B },
   ['@attribute'] = { fg = M.base_16.base0B },
   ['@constructor'] = {
-    fg = M.base_16.base0D,
+    fg = M.base_16.base08,
+  },
+  ['@property'] = {
+    fg = baseCD,
+  },
+  ['@namespace'] = {
+    fg = M.base_16.base08,
   },
   ['@parameter'] = {
     fg = M.base_16.base0E,
   },
-
   ['@reference'] = {
     fg = M.base_16.base0E,
   },
-
   ['@punctuation.bracket'] = {
     fg = M.base_16.base05,
   },
-
   ['@punctuation.delimiter'] = {
     fg = M.base_16.base0C,
   },
-
   ['@punctuation.special'] = {
     fg = M.base_16.base0C,
   },
